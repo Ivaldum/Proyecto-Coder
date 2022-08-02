@@ -1,2 +1,2 @@
-# Proyecto-Coder
-Proyecto curso desarrollo web de CoderHosue
+# CoderHouse
+Curso coderhouse desarrollo web
