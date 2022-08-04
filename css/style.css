@@ -29,9 +29,6 @@ a{
     text-decoration: none;
 }
 
-.text-primary {
-    color: var(--primary-color);
-}
 
 /*Barra de navegacion*/
 .hero{
@@ -79,6 +76,10 @@ a{
     text-transform: uppercase;
 }
 
+.nav-menu a:hover{
+    border-bottom: 3px solid var(--primary-color);
+}
+
 .open-menu,
 .close-menu{
     display: none;
@@ -113,12 +114,26 @@ a{
     margin-bottom: 20px;
 }
 
-.m-auto h1{
+.main-tittle{
     font-size: 28px;
 }
 
-.m-auto h2{
+.main-subtittle{
     font-size: 20px;
+}
+
+.tittle-animation{
+    animation: tittle-animation 4s forwards;
+}
+
+.tittle-animation2{
+    animation: tittle-animation 6s forwards;
+}
+
+@keyframes tittle-animation {
+    0% { color: white; }
+    30% { color: white; }
+    100% { color: var(--primary-color); }
 }
 
 .main-text{
@@ -137,8 +152,14 @@ a{
     background-color: var(--secundary-color);
 }
 
-.main-btn, .btn-card:hover{
+.main-btn:hover{
     filter: brightness(140%);
+    transition: filter .3s;
+}
+
+.btn-card:hover{
+    filter: brightness(140%);
+    transition: filter .3s;
 }
 
 .image-home {
@@ -381,11 +402,11 @@ label{
         margin-bottom: 0px;
     }
 
-    .m-auto h1{
+    .main-tittle{
         font-size: 30px;
     }
 
-    .m-auto h2{
+    .main-subtittle{
         font-size: 25px;
     }
 
@@ -446,6 +467,16 @@ label{
 }
 
 @media screen and (min-width:1200px){
+    /*Nav*/
+    .logo{
+        font-size: 30px;
+        line-height: 65px;
+    }
+    .nav-menu a{
+        font-size: 20px;
+        line-height: 65px;
+    }
+
     /* Main section*/
     .main-info{
         display: flex;
@@ -461,11 +492,11 @@ label{
         margin-bottom: 0px;
     }
     
-    .m-auto h1{
+    .main-tittle{
         font-size: 38px;
     }
     
-    .m-auto h2{
+    .main-subtittle{
         font-size: 30px;
     }
     
