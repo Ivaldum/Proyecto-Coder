@@ -1,4 +1,4 @@
-const menu = document.querySelector(".nav-menu");
+const menu = document.querySelector(".nav-container-menu");
 const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 
