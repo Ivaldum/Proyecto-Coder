@@ -19,9 +19,8 @@ body, html {
 }
 
 body{
-    padding-top: 85px;
     font-family: sans-serif;
-    background-color: white;
+    background-image: url(../img/fondo.jpg);
     color: var(--text-color)
 }
 
@@ -34,7 +33,12 @@ a{
     color: white;
 }
 
-
+main{
+    padding: 6em 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 /*Header*/
 .contenedor-header {
@@ -48,13 +52,16 @@ a{
     border-bottom: 1px solid white;
 }
 
+.logo-nav{
+    color: var(--primary-color);
+}
+
 header {
     position: fixed;
     top: 0;
     z-index: 100;
     font-weight: 500;
     font-size: 1.1rem;
-    min-height: 90px;
     width: 100%; 
 }
 
@@ -68,8 +75,6 @@ header .navbar {
 
 header .navbar .navbar-nav {
     gap: 25px;
-    margin-bottom: 15px;
-    margin-top: 25px; 
 }
 
 header .navbar .navbar-nav .nav-link {
@@ -99,14 +104,8 @@ header .navbar .navbar-toggler:focus {
     justify-content: center;
     text-align: center;
     align-items: center;
-    min-height: 88vh;
-    color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    )
-    ,url(../img/fondo2.jpg);
+    min-height: 91vh;
+    color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -217,7 +216,6 @@ header .navbar .navbar-toggler:focus {
     max-width: 90%;
     gap: 10px;
     margin: 0 auto;
-    padding: 15px 0px;
 }
 
 .header{
@@ -243,14 +241,15 @@ header .navbar .navbar-toggler:focus {
 }
 
 .courses-card{
-    border: 1px solid white;
-    background-color: #3a4460;
+    border: 1px solid black;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    color: white;
+    background-color: var(--nav-container-background);
 }
 
 .header{
@@ -278,7 +277,7 @@ header .navbar .navbar-toggler:focus {
 }
 
 .logo-cursos img{
-    height: 100px;
+    height: 80px;
 }
 
 /*Formulario de contacto*/
@@ -289,7 +288,7 @@ header .navbar .navbar-toggler:focus {
 }
 
 .formulario{
-    background-color: grey;
+    background-color: var(--nav-container-background);
     padding: 20px;
     border-radius: 10px;
 }
@@ -381,7 +380,6 @@ label{
 @media screen and (min-width:600px){
     /*Cursos*/
     .container-courses{
-        padding-bottom: 7em;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px auto auto auto;
         grid-template-areas: 
