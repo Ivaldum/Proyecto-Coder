@@ -203,9 +203,8 @@ header .navbar .navbar-toggler:focus {
 .container-courses{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
-    "header"
     "card1"
     "card2"
     "card3"
@@ -213,7 +212,7 @@ header .navbar .navbar-toggler:focus {
     "card5"
     "card6"
     ;
-    max-width: 90%;
+    max-width: 95%;
     gap: 10px;
     margin: 0 auto;
 }
@@ -257,13 +256,9 @@ header .navbar .navbar-toggler:focus {
     text-transform: uppercase;
 }
 
-.courses-card h3{
-    font-size: 18px;
-}
-
 .courses-card p{
     font-size: 16px;
-    padding: 15px 10px;
+    padding: 5px 10px;
 }
 
 .button-card{
@@ -381,21 +376,25 @@ label{
     /*Cursos*/
     .container-courses{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80px auto auto auto;
+        grid-template-rows: repeat(3, auto);
         grid-template-areas: 
-        "header header"
         "card1 card2"
         "card3 card4"
         "card5 card6"
         ;
     }
 
-    .formulario h2{
-        font-size: 30px;  
-    }
-
     .formulario p{
         font-size: 22px; 
+    }
+}
+
+/*REFERENCES*/
+@media screen and (max-width:768px){
+    .img-size {
+        width: 15em;
+        height: 15em;
+        margin-top: 1em;
     }
 }
 
@@ -434,25 +433,6 @@ label{
         min-height: 25em;
     }
 
-    /*Formulario de contacto*/
-
-/*
-    .formulario{
-        background-color: grey;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    input{ 
-        width: 300px; 
-        height: 40px; 
-    }
-
-    textarea{
-        width: 300px; 
-        height: 90px; 
-    }
-*/
     .formulario h2{
         font-size: 24px;  
     }
@@ -522,9 +502,8 @@ label{
     /*Cursos*/
     .container-courses{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
-        "header header header"
         "card1 card2 card3"
         "card4 card5 card6"
         ;
