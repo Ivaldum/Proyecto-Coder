@@ -64,38 +64,31 @@ header {
   font-size: 1.1rem;
   width: 100%;
 }
-
-.container-fluid {
-  padding: 0.4em 0;
-}
-
 header .navbar {
   padding: 0px 20px 0px 20px;
 }
-
 header .navbar .navbar-nav {
   gap: 25px;
 }
-
 header .navbar .navbar-nav .nav-link {
   color: white;
 }
-
 header .navbar .navbar-nav .nav-link:hover {
   color: var(--primary-color);
   transition: 0.7s;
 }
-
 header .navbar .navbar-toggler {
   border-color: transparent;
 }
-
 header .navbar .navbar-toggler:checked {
   border-color: var(--primary-color);
 }
-
 header .navbar .navbar-toggler:focus {
   box-shadow: 0 0 0 0rem;
+}
+
+.container-fluid {
+  padding: 0.4em 0;
 }
 
 /* Main section*/
@@ -162,7 +155,6 @@ header .navbar .navbar-toggler:focus {
   filter: brightness(140%);
   transition: filter 0.3s;
 }
-
 .button-main a:hover {
   filter: brightness(140%);
   transition: filter 0.3s;
@@ -197,7 +189,6 @@ header .navbar .navbar-toggler:focus {
   margin: 10px;
   padding-left: 0;
 }
-
 .redes-footer a {
   color: white;
   margin: 0 15px;
@@ -253,15 +244,14 @@ header .navbar .navbar-toggler:focus {
   color: white;
   background-color: var(--nav-container-background);
 }
+.courses-card p {
+  font-size: 16px;
+  padding: 5px 10px;
+}
 
 .header {
   font-size: 22px;
   text-transform: uppercase;
-}
-
-.courses-card p {
-  font-size: 16px;
-  padding: 5px 10px;
 }
 
 .button-card {
@@ -290,43 +280,44 @@ header .navbar .navbar-toggler:focus {
   padding: 20px;
   border-radius: 10px;
 }
-
-input {
+.formulario input {
   background-color: var(--text-color);
-  width: 240px;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: var(--primary-color);
   margin-top: 5px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
-
-textarea {
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid var(--secundary-color);
+}
+.formulario textarea {
   background-color: white;
-  width: 240px;
   height: 90px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: var(--primary-color);
   margin-top: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
   padding-top: 15px;
 }
-
-label {
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid var(--secundary-color);
+}
+.formulario label {
   display: flex;
 }
-
 .formulario h2 {
   font-size: 20px;
   text-align: left;
   padding-bottom: 20px;
   color: var(--text-color);
 }
-
 .formulario p {
   font-size: 16px;
   color: var(--text-color);
@@ -365,14 +356,6 @@ label {
   display: none;
 }
 
-/*REFERENCES*/
-@media screen and (max-width: 768px) {
-  .img-size {
-    width: 15em;
-    height: 15em;
-    margin-top: 1em;
-  }
-}
 /*RESPONSIVE @Media*/
 @media screen and (min-width: 600px) {
   /*Cursos*/
