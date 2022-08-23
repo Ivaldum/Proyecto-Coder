@@ -1,0 +1,10 @@
+/*RESPONSIVE @Media*/
+@media screen and (max-width: 768px) {
+  .img-size {
+    width: 15em;
+    height: 15em;
+    margin-top: 1em;
+  }
+}
+
+/*# sourceMappingURL=references.css.map */
