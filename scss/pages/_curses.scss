@@ -41,13 +41,10 @@
 .courses-card {
 	border: 1px solid black;
 	border-radius: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+    @include flex(flex, column, space-around, center);
 	padding: 20px;
 	color: white;
-	background-color: var(--nav-container-background);
+	background-color: $background;
 	p {
 		font-size: 16px;
 		padding: 5px 10px;
@@ -66,7 +63,7 @@
     border: 1px solid black;
     box-shadow: 1px 1px 5px black;
     color: white;
-    background-color: var(--secundary-color);
+    background-color: $secundary-color;
 }
 
 .logo-cursos img{
